@@ -1,0 +1,49 @@
+﻿<Window x:Class="Tarea2.UI.Registros.Ejercicio1Cap4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea2.UI.Registros"
+        mc:Ignorable="d"
+        Title="Ejercicio1 del capitulo 4" Height="480" Width="380">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <StackPanel Orientation="Vertical">
+                <Label Content="Ejercicio 1 - Hacer un programa que muestre la tabla de "/>
+                <Label Content="                 - multiplicar del 1 al 10 de cualquier numero "/>
+
+            </StackPanel>
+
+
+            <Label Content="Digite el numero" />
+            <TextBox x:Name="NumeroTexbox" />
+
+            <Label Content="Resultado" Height="24"/>
+            <TextBox x:Name="ResultadoTextbox" Height="167" TextWrapping="Wrap" AcceptsReturn="True"/>
+
+
+            <!--Barra de botones-->
+
+            <StackPanel Orientation="Horizontal" Margin="0,15">
+
+
+                <Button x:Name="CalcularButton" Margin="5,0" Click="CalcularButton_Click" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="150"/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Calcular" />
+                    </StackPanel>
+                </Button>
+
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>
